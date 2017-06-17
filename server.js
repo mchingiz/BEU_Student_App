@@ -5,17 +5,18 @@ const app = express();
 
 // Package settings
 
-Browser.waitDuration = '30s'
-app.use(express.static('public'))
+Browser.waitDuration = '30s';
+app.use(express.static('public'));
+app.set('port', (process.env.PORT || 5000));
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
 
-app.listen(80, function () {
-    console.log('Example app listening on port 80!')
-})
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+});
 
 app.get('/', function (req, res) {
     console.log('index');
