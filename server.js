@@ -4,13 +4,22 @@ const Browser = require('zombie');
 const app = express();
 const winston = require('winston'); // logger
 
+// --------- PACKAGE SETTINGS ---------
+
+Browser.waitDuration = '30s';
+app.use(express.static('public'));
+app.set('port', (process.env.PORT || 80));
+
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
+
 // --------- LOGGING -------
 
 var offset = +4;
 
 function timestampFormatter(){
-    // var dt = new Date();
-
     var dt = new Date( new Date().getTime()+offset*3600*1000 );
 
     return timestamp =
@@ -69,18 +78,7 @@ var logger = new (winston.Logger)({
 
 logger.info('PROCESS RESTARTED');
 
-// Package settings
-
-Browser.waitDuration = '30s';
-app.use(express.static('public'));
-app.set('port', (process.env.PORT || 80));
-
-app.use( bodyParser.json() );       // to support JSON-encoded bodies
-app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
-  extended: true
-}));
-
-// Functionality
+// --------- FUNCTIONALITY ---------
 
 app.listen(app.get('port'), function() {
     console.log('Node app is running on port', app.get('port'));
@@ -89,7 +87,7 @@ app.listen(app.get('port'), function() {
 app.get('/', function (req, res) {
     console.log('index');
 
-    res.sendFile(__dirname+'/index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.post('/getData', function (req, res) {
@@ -119,8 +117,8 @@ function checkAndGetData(username,password,sendResponseCallback){
         // console.log(browser.document.documentElement.innerHTML);
 
         console.log('requested homepage');
-
         console.log('in page');
+
         browser.fill('input[name=username]',username)
             .fill('input[name=password]',password)
             .pressButton('input[name=LogIn]',function(err){
@@ -183,14 +181,13 @@ function getGrades(browser,sendResponseCallback){
             // console.log(browser.query())
             // console.log(browser.document.documentElement.innerHTML);
 
-            console.log('---------------------');
 
             var subjects = browser.querySelectorAll('#divShowStudGrades table tbody tr');
             // var gradesList = browser.html('#divShowStudGrades');
 
             data = createJsonObject(subjects);
 
-            printStudentGrades(data);
+            // printStudentGrades(data);
 
             sendResponseCallback(data);
         })

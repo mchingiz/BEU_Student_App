@@ -25,14 +25,13 @@ function populateTable(subjects){
             .append($("<td>").text(subjects[i].fnl))
             .append($("<td>").text(subjects[i].avg))
 
-        if(subjects[i].avg == ""){
+        if(subjects[i].avg == ""){ // Subject is not complete
             $subjectTR.append($("<td>").text(targetScores["51"]))
                     .append($("<td>").text(targetScores["71"]))
                     .append($("<td>").text(targetScores["91"]))
-        }else if(subjects[i].avg >= 51){
+        }else if(subjects[i].avg >= 51){ // Subject is passed
             $subjectTR.append($("<td>").attr("colspan","3").addClass("center aligned passedSubject").html("passed"))
-            // $subjectTR.addClass("positive");
-        }else if(subjects[i]<avg < 51){
+        }else if(subjects[i].avg < 51){ // Subject failed
             $subjectTR.addClass("negative");
         }
 
@@ -45,13 +44,10 @@ function populateTable(subjects){
 function calculateTargetPoints(subject,target){
     var res = {};
 
-    if(subject.avg != ""){
-        return res = {
-            "51": "-",
-            "71": "-",
-            "91": "-",
-        }
+    if(subject.avg != ""){ // Then subject is complete, no need to calculate target points
+        return res;
     }
+
     var entryPoint = 0;
 
     subject.sdf1 !== ( "Q" || "" ) ? entryPoint += subject.sdf1/10 : entryPoint += 0;
@@ -112,15 +108,14 @@ $('.ui.form').form({
             jokeInterval = setInterval(changeLoadingText,5000);
             serverTimeout = setTimeout(errorOnServerSide, 35000);
 
-            data = {
+            userData = {
                 username: username,
                 password: password
             }
 
-
             $.ajax({
     			type: 'POST',
-    			data: JSON.stringify(data),
+    			data: JSON.stringify(userData),
     	        contentType: 'application/json',
                 url: 'http://beu-calculator.herokuapp.com/getData',
                 success: function(data) {
