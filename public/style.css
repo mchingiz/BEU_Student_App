@@ -1,0 +1,31 @@
+#grades {
+    display: none;
+}
+
+#loader {
+    display: none;
+}
+
+#loader .dimmer, #loader .segment {
+    height: 300px;
+}
+
+#errorBox {
+    display:none;
+}
+
+#submitForm {
+    margin-top:25px;
+}
+
+.studentForm{
+    margin-top: 10px;
+}
+
+.studentForm label{
+    margin-bottom: 5px !important;
+}
+
+.passedSubject {
+    color: green;
+}

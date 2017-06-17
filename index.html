@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Grade Calculator</title>
+        <link rel="stylesheet" href="/semantic.min.css"/>
+        <link rel="stylesheet" href="/style.css"/>
+        <script src="/jquery.min.js"></script>
+        <script src="/semantic.min.js"></script>
+    </head>
+    <body>
+        <div class="ui one column centered grid">
+            <div class="one column row">
+                <div class="six wide column">
+                    <form class="ui form studentForm">
+                        <div class="inline fields">
+                            <div class="field">
+                                <label>Tələbə nömrəsi</label>
+                                <input type="text" name="username" placeholder="Tələbə nömrəniz" value="140105023">
+                            </div>
+
+                            <div class="field">
+                                <label>Parol</label>
+                                <input type="password" name="password" placeholder="" value="c171617126m">
+                            </div>
+
+                            <div class="field">
+                                <button class="ui button" id="submitForm" type="submit">Hesabla</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="one column row" id="errorBox">
+                <div class="ten wide column">
+                    <div class="ui negative message">
+                        <div class="header">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="one column row" id="grades">
+                <div class="ten wide column">
+                    <table class="ui striped table">
+                        <thead>
+                            <tr>
+                                <th>Dərs kodu</th>
+                                <th>Akts sayı</th>
+                                <th>Dərsin adı</th>
+                                <th>SDF 1</th>
+                                <th>SDF 2</th>
+                                <th>SDF 3</th>
+                                <th>FF</th>
+                                <th>Dvmyyt</th>
+                                <th>Final</th>
+                                <th>Ortalama</th>
+                                <th>A üçün lazımi bal</th>
+                                <th>C üçün lazımi bal</th>
+                                <th>Keçmək üçün lazımi bal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="one column row" id="loader">
+                <div class="ui ten wide column">
+                    <div class="ui segment">
+                        <div class="ui active inverted dimmer">
+                            <div class="ui massive text loader">Biraz gözləyin</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript" src="/index.js"></script>
+    </body>
+</html>
