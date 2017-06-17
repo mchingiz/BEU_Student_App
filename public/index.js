@@ -122,7 +122,7 @@ $('.ui.form').form({
     			type: 'POST',
     			data: JSON.stringify(data),
     	        contentType: 'application/json',
-                url: 'http://localhost:3000/getData',
+                url: 'http://beu-calculator.herokuapp.com/getData',
                 success: function(data) {
                     console.log('success');
 
@@ -167,6 +167,8 @@ function changeLoadingText(){
 
 function errorOnServerSide(){
     errorBox.find(".header").text("Səbəbini bilmədiyimiz bir problem baş verdi, zəhmət olmasa yenidən yoxla");
+    loader.hide();
+    grades.hide();
     errorBox.show();
 }
 
