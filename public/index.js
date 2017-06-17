@@ -122,7 +122,7 @@ $('.ui.form').form({
     			type: 'POST',
     			data: JSON.stringify(data),
     	        contentType: 'application/json',
-                url: 'localhost:3000',
+                url: 'http://beu-calculator.herokuapp.com/getData',
                 success: function(data) {
                     console.log('success');
 

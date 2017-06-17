@@ -96,7 +96,7 @@ app.post('/getData', function (req, res) {
     console.log('request');
 
     // Can delete on production
-    res.header('Access-Control-Allow-Origin', 'localhost');
+    res.header('Access-Control-Allow-Origin', 'http://beu-calculator.herokuapp.com');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
