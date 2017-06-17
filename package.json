@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node ./node_modules/.bin/pm2 start app.js -i max --attach"
+    "preinstall": "npm i -g pm2 && pm2 install pm2-logrotate"
   },
   "author": "",
   "license": "ISC",
