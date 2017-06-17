@@ -29,3 +29,11 @@
 .passedSubject {
     color: green;
 }
+
+.bold {
+    font-weight: bold !important;
+}
+
+.table {
+    text-align: center !important;
+}

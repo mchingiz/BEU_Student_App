@@ -9,7 +9,7 @@ var serverTimeout;
 
 function populateTable(subjects){
     for(var i=0;i<subjects.length;i++){
-        console.log(subjects[i].name);
+        // console.log(subjects[i].name);
 
         var targetScores = calculateTargetPoints(subjects[i]);
 
@@ -23,7 +23,7 @@ function populateTable(subjects){
             .append($("<td>").text(subjects[i].ff))
             .append($("<td>").text(subjects[i].dvm))
             .append($("<td>").text(subjects[i].fnl))
-            .append($("<td>").text(subjects[i].avg))
+            .append($("<td class='bold'>").text(subjects[i].avg))
 
         if(subjects[i].avg == ""){ // Subject is not complete
             $subjectTR.append($("<td>").text(targetScores["51"]))
@@ -36,7 +36,7 @@ function populateTable(subjects){
         }
 
 
-        console.log($subjectTR);
+        // console.log($subjectTR);
         gradesTable.find("tbody").append($subjectTR);
     }
 }
@@ -56,7 +56,7 @@ function calculateTargetPoints(subject,target){
     subject.ff !== ( "Q" || "" ) ? entryPoint += subject.ff/10 : entryPoint += 0;
     subject.dvm !== ( "Q" || "" ) ? entryPoint += subject.dvm/10 : entryPoint += 0;
 
-    console.log(subject.name + ': ' + entryPoint);
+    // console.log(subject.name + ': ' + entryPoint);
 
     res["51"] = Math.ceil( (51-entryPoint)*2 );
     res["71"] = Math.ceil( (71-entryPoint)*2 );
@@ -101,7 +101,7 @@ $('.ui.form').form({
         var validationResult = studentForm.form('is valid');
 
         if(validationResult){
-            console.log('asdf');
+            // console.log('asdf');
 
             loader.show();
 
@@ -119,7 +119,7 @@ $('.ui.form').form({
     	        contentType: 'application/json',
                 url: 'http://beu-calculator.herokuapp.com/getData',
                 success: function(data) {
-                    console.log('success');
+                    // console.log('success');
 
                     if(!data.error){
                         clearTimeout(serverTimeout);
@@ -148,14 +148,14 @@ var jokeNumber = 0;
 function changeLoadingText(){
     var currentJoke = $(".ui.massive.text.loader");
 
-    console.log("currentJoke: "+currentJoke)
+    // console.log("currentJoke: "+currentJoke)
 
     while(currentJoke.text() == kindaFunny[jokeNumber]){
         jokeNumber = Math.floor(Math.random() * kindaFunny.length);
-        console.log(jokeNumber.text());
+        // console.log(jokeNumber.text());
     }
 
-    console.log("newJoke: "+kindaFunny[jokeNumber])
+    // console.log("newJoke: "+kindaFunny[jokeNumber])
 
     currentJoke.text(kindaFunny[jokeNumber]);
 }
