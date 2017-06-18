@@ -58,9 +58,16 @@ function calculateTargetPoints(subject,target){
 
     // console.log(subject.name + ': ' + entryPoint);
 
-    res["51"] = Math.ceil( (51-entryPoint)*2 );
-    res["71"] = Math.ceil( (71-entryPoint)*2 );
-    res["91"] = Math.ceil( (91-entryPoint)*2 );
+    // First store value as float
+    res["51"] = (50.5-entryPoint)*2;
+    res["71"] = (70.5-entryPoint)*2;
+    res["91"] = (90.5-entryPoint)*2;
+
+    // If any target point is bigger than 100, change value with "-"
+    // If not round target point
+    res["51"] > 100 ? res["51"] = "-" : res["51"] = Math.round(res["51"]);
+    res["71"] > 100 ? res["71"] = "-" : res["71"] = Math.round(res["71"]);
+    res["91"] > 100 ? res["91"] = "-" : res["91"] = Math.round(res["91"]);
 
     return res;
 }
@@ -182,17 +189,19 @@ var kindaFunny = [
 
 var exampleData = [
     {
+        // entryPoint = 40.4, so getting an A is impossible
+        // After increasing 'dvm' point by 1, getting an A will be possible(with 100 hunred points from final)
         name: "Data Structures and Algorithms",
-        code: "COMP 202",
-        abs: "6",
-        avg: "98",
         ects: "6",
-        dvm: "90",
-        ff: "100",
-        fnl: "100",
-        sdf1: "90",
-        sdf2: "90",
+        code: "COMP 202",
+        sdf1: "100",
+        sdf2: "100",
         sdf3: "100",
+        abs: "100",
+        ff: "100",
+        dvm: "4",
+        fnl: "",
+        avg: "",
     },{
         name: "Numerical Analysis",
         code: "COMP 305",
@@ -207,3 +216,10 @@ var exampleData = [
         sdf3: "400",
     }
 ]
+
+// testTable();
+//
+// function testTable(){
+//     grades.show();
+//     populateTable(exampleData);
+// }
