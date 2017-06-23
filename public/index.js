@@ -32,7 +32,7 @@ function populateTable(subjects){
         }else if(subjects[i].avg >= 51){ // Subject is passed
             $subjectTR.append($("<td>").attr("colspan","3").addClass("center aligned passedSubject").html("passed"))
         }else if(subjects[i].avg < 51){ // Subject failed
-            $subjectTR.addClass("negative");
+            $subjectTR.append($("<td>").attr("colspan","3").addClass("center aligned failedSubject").html("failed"))
         }
 
 
@@ -41,7 +41,7 @@ function populateTable(subjects){
     }
 }
 
-function calculateTargetPoints(subject,target){
+function calculateTargetPoints(subject){
     var res = {};
 
     if(subject.avg != ""){ // Then subject is complete, no need to calculate target points

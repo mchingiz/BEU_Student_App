@@ -30,6 +30,10 @@
     color: green;
 }
 
+.failedSubject {
+    color: red;
+}
+
 .bold {
     font-weight: bold !important;
 }

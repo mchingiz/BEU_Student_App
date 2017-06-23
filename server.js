@@ -8,7 +8,7 @@ const winston = require('winston'); // logger
 
 Browser.waitDuration = '30s';
 app.use(express.static('public'));
-app.set('port', (process.env.PORT || 80));
+app.set('port', 3000);
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
@@ -203,14 +203,14 @@ function createJsonObject(subjects){
         subject.code = subjects[i].querySelectorAll('td')[0].innerHTML;
         subject.name = subjects[i].querySelectorAll('td')[3].innerHTML;
         subject.ects = subjects[i].querySelectorAll('td')[4].innerHTML.trim();
-        subject.abs = subjects[i].querySelectorAll('td')[5].innerHTML.trim();
-        subject.sdf1 = subjects[i].querySelectorAll('td')[6].innerHTML.trim();
-        subject.sdf2 = subjects[i].querySelectorAll('td')[7].innerHTML.trim();
-        subject.sdf3 = subjects[i].querySelectorAll('td')[8].innerHTML.trim();
-        subject.ff = subjects[i].querySelectorAll('td')[9].innerHTML.trim();
-        subject.dvm = subjects[i].querySelectorAll('td')[10].innerHTML.trim();
-        subject.fnl = subjects[i].querySelectorAll('td')[11].innerHTML.trim();
-        subject.avg = subjects[i].querySelectorAll('td')[13].innerHTML.trim().replace("&nbsp;","");
+        subject.abs = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[5].innerHTML.trim() );
+        subject.sdf1 = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[6].innerHTML.trim() );
+        subject.sdf2 = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[7].innerHTML.trim() );
+        subject.sdf3 = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[8].innerHTML.trim() );
+        subject.ff = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[9].innerHTML.trim() );
+        subject.dvm = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[10].innerHTML.trim() );
+        subject.fnl = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[11].innerHTML.trim() );
+        subject.avg = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[13].innerHTML.trim().replace("&nbsp;","") );
 
         // console.log(subject.avg)
 
@@ -230,4 +230,12 @@ function printStudentGrades(student){
             }
         }
     }
+}
+
+function returnNegativeIfEmpty(str){
+    if( str != ""){
+        return str;
+    }
+
+    return "-1";
 }
