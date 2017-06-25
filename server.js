@@ -116,7 +116,7 @@ function checkAndGetData(username,password,sendResponseCallback){
     Browser.visit('https://my.qu.edu.az',function(e,browser){
         // console.log(browser.document.documentElement.innerHTML);
 
-        console.log('requested homepage');
+        console.log('requested homepage / '+username+' / '+password);
         console.log('in page');
 
         browser.fill('input[name=username]',username)
@@ -125,6 +125,7 @@ function checkAndGetData(username,password,sendResponseCallback){
                 if(err){
                     console.log('error on pressing login');
 
+                    data.statusCode = 500;
                     data.error = "Hesaba giriş edə bilmədik, zəhmət olmasa təkrar 'hesabla' düyməsini bas";
 
                     sendResponseCallback(data);
@@ -142,6 +143,8 @@ function checkAndGetData(username,password,sendResponseCallback){
 
                 browser.pressButton('input[name=btnOxudum]',function(err){
                     if(err){
+
+                        data.statusCode = 500;
                         data.error = "Qiymətləri götürərkən problem yarandı, zəhmət olmasa təkrar 'hesabla' düyməsini bas";
 
                         console.log("Qiymətləri götürərkən problem yarandı, zəhmət olmasa təkrar 'hesabla' düyməsini bas");
@@ -159,6 +162,7 @@ function checkAndGetData(username,password,sendResponseCallback){
                 if(browser.querySelector("input[name=username]")){
                     console.log("wrong credentials");
 
+                    data.statusCode = 400;
                     data.error = "Girdiyin tələbə nömrəsi və ya parol səhvdir, zəhmət olmasa düzgün versiyalarını yazıb, bir daha yoxla";
 
                     sendResponseCallback(data);
@@ -178,14 +182,17 @@ function getGrades(browser,sendResponseCallback){
     browser.wait().then(function(){
         browser.location = "?mod=grades";
         browser.wait().then(function(){
+            data = {};
+            data.statusCode = 200;
+
             // console.log(browser.query())
             // console.log(browser.document.documentElement.innerHTML);
 
 
-            var subjects = browser.querySelectorAll('#divShowStudGrades table tbody tr');
+            var subjectsHTML = browser.querySelectorAll('#divShowStudGrades table tbody tr');
             // var gradesList = browser.html('#divShowStudGrades');
 
-            data = createJsonObject(subjects);
+            data.subjects = createSubjectsArray(subjectsHTML);
 
             // printStudentGrades(data);
 
@@ -194,48 +201,44 @@ function getGrades(browser,sendResponseCallback){
     })
 }
 
-function createJsonObject(subjects){
-    var student = [];
+function createSubjectsArray(subjectsHTML){
+    var subjects = [];
 
-    for(var i=2;i<subjects.length-1;i++){
+    for(var i=2;i<subjectsHTML.length-1;i++){
         var subject = {}
 
-        subject.code = subjects[i].querySelectorAll('td')[0].innerHTML;
-        subject.name = subjects[i].querySelectorAll('td')[3].innerHTML;
-        subject.ects = subjects[i].querySelectorAll('td')[4].innerHTML.trim();
-        subject.abs = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[5].innerHTML.trim() );
-        subject.sdf1 = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[6].innerHTML.trim() );
-        subject.sdf2 = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[7].innerHTML.trim() );
-        subject.sdf3 = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[8].innerHTML.trim() );
-        subject.ff = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[9].innerHTML.trim() );
-        subject.dvm = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[10].innerHTML.trim() );
-        subject.fnl = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[11].innerHTML.trim() );
-        subject.avg = returnNegativeIfEmpty( subjects[i].querySelectorAll('td')[13].innerHTML.trim().replace("&nbsp;","") );
+        subject.code = subjectsHTML[i].querySelectorAll('td')[0].innerHTML;
+        subject.name = subjectsHTML[i].querySelectorAll('td')[3].innerHTML;
+        subject.ects = subjectsHTML[i].querySelectorAll('td')[4].innerHTML.trim();
+        subject.abs = subjectsHTML[i].querySelectorAll('td')[5].innerHTML.trim();
+        subject.sdf1 = subjectsHTML[i].querySelectorAll('td')[6].innerHTML.trim();
+        subject.sdf2 = subjectsHTML[i].querySelectorAll('td')[7].innerHTML.trim();
+        subject.sdf3 = subjectsHTML[i].querySelectorAll('td')[8].innerHTML.trim();
+        subject.ff = subjectsHTML[i].querySelectorAll('td')[9].innerHTML.trim();
+        subject.dvm = subjectsHTML[i].querySelectorAll('td')[10].innerHTML.trim();
+        subject.fnl = subjectsHTML[i].querySelectorAll('td')[11].innerHTML.trim();
+        subject.avg = subjectsHTML[i].querySelectorAll('td')[13].innerHTML.trim().replace("&nbsp;","");
 
-        // console.log(subject.avg)
+        console.log('name: '+subject.name);
+        console.log('sdf1: '+subject.sdf1);
 
-        student[i-2] = subject;
+        subjects[i-2] = subject;
     }
 
-    return student;
+    console.log('------------')
+    printStudentGrades(subjects);
+
+    return subjects;
 }
 
-function printStudentGrades(student){
-    for(var i=0;i<student.length;i++){
+function printStudentGrades(subjects){
+    for(var i=0;i<subjects.length;i++){
 
-    console.log("------ "+student[i].name+" ------")
-        for(var key in student[i]){
+    console.log("------ "+subjects[i].name+" ------")
+        for(var key in subjects[i]){
             if(key != "name"){
-                console.log("    "+key+": "+student[i][key]);
+                console.log("    "+key+": "+subjects[i][key]);
             }
         }
     }
-}
-
-function returnNegativeIfEmpty(str){
-    if( str != ""){
-        return str;
-    }
-
-    return "-1";
 }

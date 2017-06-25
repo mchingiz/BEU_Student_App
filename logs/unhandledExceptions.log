@@ -1,0 +1,114 @@
+ERROR || 6/23/2017 20:9:59:759
+	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
+    at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
+    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at Browser.g (events.js:291:16)
+    at emitOne (events.js:101:20)
+    at Browser.emit (events.js:188:7)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\document.js:889:15
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:377:27
+    at tryCatcher (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------
+ERROR || 6/23/2017 20:10:53:866
+	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
+    at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
+    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at Browser.g (events.js:291:16)
+    at emitOne (events.js:101:20)
+    at Browser.emit (events.js:188:7)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\document.js:889:15
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:377:27
+    at tryCatcher (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------
+ERROR || 6/23/2017 20:11:39:657
+	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
+    at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
+    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at Browser.g (events.js:291:16)
+    at emitOne (events.js:101:20)
+    at Browser.emit (events.js:188:7)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\document.js:889:15
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:377:27
+    at tryCatcher (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------
+ERROR || 6/23/2017 20:12:16:921
+	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
+    at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
+    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at Browser.g (events.js:291:16)
+    at emitOne (events.js:101:20)
+    at Browser.emit (events.js:188:7)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\document.js:889:15
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:377:27
+    at tryCatcher (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------
+ERROR || 6/23/2017 20:12:40:691
+	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
+    at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
+    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at Browser.g (events.js:291:16)
+    at emitOne (events.js:101:20)
+    at Browser.emit (events.js:188:7)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\document.js:889:15
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:377:27
+    at tryCatcher (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------
+ERROR || 6/25/2017 17:52:9:18
+	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
+    at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
+    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at Browser.g (events.js:291:16)
+    at emitOne (events.js:101:20)
+    at Browser.emit (events.js:188:7)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\document.js:889:15
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:377:27
+    at tryCatcher (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
+    at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------

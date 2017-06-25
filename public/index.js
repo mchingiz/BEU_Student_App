@@ -112,6 +112,7 @@ $('.ui.form').form({
 
             loader.show();
 
+            clearTimeout(serverTimeout);
             jokeInterval = setInterval(changeLoadingText,5000);
             serverTimeout = setTimeout(errorOnServerSide, 35000);
 
@@ -124,15 +125,17 @@ $('.ui.form').form({
     			type: 'POST',
     			data: JSON.stringify(userData),
     	        contentType: 'application/json',
-                url: 'http://beu-calculator.herokuapp.com/getData',
+                url: 'http://localhost:3000/getData',
                 success: function(data) {
-                    // console.log('success');
+                    console.log(data);
 
-                    if(!data.error){
+                    if(data.statusCode == 200){
+                        console.log('--- DATA ---');
+                        console.log(data);
                         clearTimeout(serverTimeout);
 
                         gradesTable.find("tbody").empty();
-                        populateTable(data);
+                        populateTable(data.subjects);
                         grades.show();
                     }else{
                         errorBox.find(".header").text(data.error);
