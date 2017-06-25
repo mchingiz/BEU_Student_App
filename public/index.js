@@ -118,7 +118,8 @@ $('.ui.form').form({
 
             userData = {
                 username: username,
-                password: password
+                password: password,
+                lang: "az"
             }
 
             $.ajax({

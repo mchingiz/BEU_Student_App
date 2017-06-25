@@ -100,6 +100,7 @@ app.post('/getData', function (req, res) {
 
     var username = req.body.username;
     var password = req.body.password;
+    var lang = req.body.lang;
 
     var result = checkAndGetData(username,password,function(result){
         res.json(result);
@@ -126,7 +127,11 @@ function checkAndGetData(username,password,sendResponseCallback){
                     console.log('error on pressing login');
 
                     data.statusCode = 500;
-                    data.error = "Hesaba giriş edə bilmədik, zəhmət olmasa təkrar 'hesabla' düyməsini bas";
+                    if(lang == "az"){
+                        data.error = "Hesaba giriş edə bilmədik, zəhmət olmasa təkrar 'daxil ol' düyməsini basın";
+                    }else if(lang == en){
+                        data.error = "Something went wrong. Please try again by click 'login'"
+                    }
 
                     sendResponseCallback(data);
                 }else{
@@ -145,7 +150,11 @@ function checkAndGetData(username,password,sendResponseCallback){
                     if(err){
 
                         data.statusCode = 500;
-                        data.error = "Qiymətləri götürərkən problem yarandı, zəhmət olmasa təkrar 'hesabla' düyməsini bas";
+                        if(lang == "az"){
+                            data.error = "Qiymətləri götürərkən problem yarandı, zəhmət olmasa təkrar 'hesabla' düyməsini bas";
+                        }else if(lang == "en"){
+                            data.error = "Something went wrong when we tried to get your grades. Please try again by click 'login'";
+                        }
 
                         console.log("Qiymətləri götürərkən problem yarandı, zəhmət olmasa təkrar 'hesabla' düyməsini bas");
 
@@ -163,7 +172,12 @@ function checkAndGetData(username,password,sendResponseCallback){
                     console.log("wrong credentials");
 
                     data.statusCode = 400;
-                    data.error = "Girdiyin tələbə nömrəsi və ya parol səhvdir, zəhmət olmasa düzgün versiyalarını yazıb, bir daha yoxla";
+
+                    if(lang == "az"){
+                        data.error = "Girdiyin tələbə nömrəsi və ya parol səhvdir, zəhmət olmasa düzgün versiyalarını yazıb, bir daha yoxla";
+                    }else if(lang == "en"){
+                        data.error = "Credentials you have entered are wrong. Please correct them and try again";
+                    }
 
                     sendResponseCallback(data);
 
