@@ -102,7 +102,7 @@ app.post('/getData', function (req, res) {
     var password = req.body.password;
     var lang = req.body.lang;
 
-    var result = checkAndGetData(username,password,function(result){
+    var result = checkAndGetData(username,password,lang,function(result){
         res.json(result);
 
         console.log("sent");
@@ -111,7 +111,7 @@ app.post('/getData', function (req, res) {
     console.log('sending');
 });
 
-function checkAndGetData(username,password,sendResponseCallback){
+function checkAndGetData(username,password,lang,sendResponseCallback){
     var data = {};
 
     Browser.visit('https://my.qu.edu.az',function(e,browser){
