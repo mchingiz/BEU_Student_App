@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const Browser = require('zombie');
@@ -94,12 +96,20 @@ app.post('/getData', function (req, res) {
     console.log('request');
 
     // Can delete on production
-    res.header('Access-Control-Allow-Origin', 'http://beu-calculator.herokuapp.com');
+    // res.header('Access-Control-Allow-Origin', 'http://beu-calculator.herokuapp.com');
     res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
     res.header('Access-Control-Allow-Headers', 'Content-Type');
 
-    var username = req.body.username;
-    var password = req.body.password;
+    console.log('Environment: '+process.env.ENV);
+
+    if(process.env.ENV == "pro"){
+        var username = req.body.username;
+        var password = req.body.password;
+    }else if(process.env.ENV == "dev"){
+        var username = process.env.STUDENT_ID;
+        var password = process.env.STUDENT_PASSWORD;
+    }
+
     var lang = req.body.lang;
 
     var result = checkAndGetData(username,password,lang,function(result){
@@ -206,7 +216,9 @@ function getGrades(browser,sendResponseCallback){
             var subjectsHTML = browser.querySelectorAll('#divShowStudGrades table tbody tr');
             // var gradesList = browser.html('#divShowStudGrades');
 
-            data.subjects = createSubjectsArray(subjectsHTML);
+            var studentData = createStudentData(subjectsHTML);
+            data.subjects = studentData.subjects;
+            data.average = studentData.average;
 
             // printStudentGrades(data);
 
@@ -215,7 +227,8 @@ function getGrades(browser,sendResponseCallback){
     })
 }
 
-function createSubjectsArray(subjectsHTML){
+function createStudentData(subjectsHTML){
+    var studentData = {};
     var subjects = [];
 
     for(var i=2;i<subjectsHTML.length-1;i++){
@@ -231,18 +244,22 @@ function createSubjectsArray(subjectsHTML){
         subject.ff = subjectsHTML[i].querySelectorAll('td')[9].innerHTML.trim();
         subject.dvm = subjectsHTML[i].querySelectorAll('td')[10].innerHTML.trim();
         subject.fnl = subjectsHTML[i].querySelectorAll('td')[11].innerHTML.trim();
-        subject.avg = subjectsHTML[i].querySelectorAll('td')[13].innerHTML.trim().replace("&nbsp;","");
+        subject.avg = subjectsHTML[i].querySelectorAll('td')[14].innerHTML.trim().replace("&nbsp;","");
 
-        console.log('name: '+subject.name);
-        console.log('sdf1: '+subject.sdf1);
+        // console.log('name: '+subject.name);
+        // console.log('sdf1: '+subject.sdf1);
 
         subjects[i-2] = subject;
     }
 
-    console.log('------------')
-    printStudentGrades(subjects);
+    studentData.subjects = subjects;
+    studentData.average = subjectsHTML[subjectsHTML.length-1].querySelector('td:last-child').innerHTML.replace(/<\/?[^>]+(>|$)/g, ""); // To delete any inner htlm tag
 
-    return subjects;
+    console.log('------------');
+    // printStudentGrades(studentData.subjects);
+    console.log(studentData.average);
+
+    return studentData;
 }
 
 function printStudentGrades(subjects){
