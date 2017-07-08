@@ -1,5 +1,6 @@
 node_modules/
 androidDesign/
+trash/
 db/*
 .env
 npm-debug.log
