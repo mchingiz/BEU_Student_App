@@ -1,7 +1,7 @@
 ERROR || 6/23/2017 20:9:59:759
 	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
     at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
-    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\server2.js:122:17
     at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
     at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
     at Browser.g (events.js:291:16)
@@ -20,7 +20,7 @@ ERROR || 6/23/2017 20:9:59:759
 ERROR || 6/23/2017 20:10:53:866
 	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
     at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
-    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\server2.js:122:17
     at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
     at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
     at Browser.g (events.js:291:16)
@@ -39,7 +39,7 @@ ERROR || 6/23/2017 20:10:53:866
 ERROR || 6/23/2017 20:11:39:657
 	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
     at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
-    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\server2.js:122:17
     at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
     at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
     at Browser.g (events.js:291:16)
@@ -58,7 +58,7 @@ ERROR || 6/23/2017 20:11:39:657
 ERROR || 6/23/2017 20:12:16:921
 	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
     at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
-    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\server2.js:122:17
     at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
     at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
     at Browser.g (events.js:291:16)
@@ -77,7 +77,7 @@ ERROR || 6/23/2017 20:12:16:921
 ERROR || 6/23/2017 20:12:40:691
 	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
     at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
-    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\server2.js:122:17
     at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
     at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
     at Browser.g (events.js:291:16)
@@ -96,7 +96,7 @@ ERROR || 6/23/2017 20:12:40:691
 ERROR || 6/25/2017 17:52:9:18
 	uncaughtException: No INPUT matching 'input[name=username]'AssertionError: No INPUT matching 'input[name=username]'
     at Browser.fill (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:841:7)
-    at E:\XAMPP\htdocs\autoLogin\server.js:122:17
+    at E:\XAMPP\htdocs\autoLogin\server2.js:122:17
     at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
     at Browser.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
     at Browser.g (events.js:291:16)
@@ -111,4 +111,43 @@ ERROR || 6/25/2017 17:52:9:18
     at Promise._settlePromises (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\promise.js:689:18)
     at Async._drainQueue (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:133:16)
     at Async._drainQueues (E:\XAMPP\htdocs\autoLogin\node_modules\bluebird\js\release\async.js:143:10)
+------------------------------
+ERROR || 7/9/2017 5:45:34:635
+	uncaughtException: Cannot read property 'username' of undefinedTypeError: Cannot read property 'username' of undefined
+    at E:\XAMPP\htdocs\autoLogin\server2.js:154:38
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at EventLoop.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at EventLoop.g (events.js:291:16)
+    at emitNone (events.js:91:20)
+    at EventLoop.emit (events.js:185:7)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:688:71)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+------------------------------
+ERROR || 7/9/2017 5:46:10:419
+	uncaughtException: Cannot read property 'username' of undefinedTypeError: Cannot read property 'username' of undefined
+    at E:\XAMPP\htdocs\autoLogin\server2.js:156:38
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at EventLoop.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at EventLoop.g (events.js:291:16)
+    at emitNone (events.js:91:20)
+    at EventLoop.emit (events.js:185:7)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:688:71)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+------------------------------
+ERROR || 7/9/2017 5:46:29:281
+	uncaughtException: Cannot read property 'username' of undefinedTypeError: Cannot read property 'username' of undefined
+    at E:\XAMPP\htdocs\autoLogin\server2.js:157:38
+    at E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\index.js:1665:16
+    at EventLoop.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at EventLoop.g (events.js:291:16)
+    at emitNone (events.js:91:20)
+    at EventLoop.emit (events.js:185:7)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:688:71)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
 ------------------------------
