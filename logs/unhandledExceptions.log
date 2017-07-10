@@ -602,3 +602,247 @@ ERROR || 7/10/2017 6:57:7:834
     at startup (bootstrap_node.js:149:9)
     at bootstrap_node.js:509:3
 ------------------------------
+ERROR || 7/10/2017 7:19:59:925
+	uncaughtException: Unexpected token )E:\XAMPP\htdocs\autoLogin\lib\crawler.js:210
+                    data.browser.clickLink(courseLink,function())
+                                                                ^
+SyntaxError: Unexpected token )
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 7:20:3:743
+	uncaughtException: Unexpected token )E:\XAMPP\htdocs\autoLogin\lib\crawler.js:210
+                    data.browser.clickLink(courseLink,function(err,browser,status))
+                                                                                  ^
+SyntaxError: Unexpected token )
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 7:27:5:949
+	uncaughtException: missing ) after argument listE:\XAMPP\htdocs\autoLogin\lib\crawler.js:207
+                    var courseLink = data.browser.querySelectorAll('#divCont table tbody tr:nth-child('+data.courseId') td a').innerHTML;
+                                                                                                             ^^^^^^^^
+SyntaxError: missing ) after argument list
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 7:50:40:727
+	uncaughtException: Unexpected token )E:\XAMPP\htdocs\autoLogin\lib\crawler.js:214
+                    data.browser.click(courseLink.innerHTML,function(err,){
+                                                                         ^
+SyntaxError: Unexpected token )
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 7:51:5:706
+	uncaughtException: Unexpected token )E:\XAMPP\htdocs\autoLogin\lib\crawler.js:214
+                    data.browser.clickLink(courseLink.innerHTML,function(err,){
+                                                                             ^
+SyntaxError: Unexpected token )
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 7:52:25:726
+	uncaughtException: Unexpected token }E:\XAMPP\htdocs\autoLogin\lib\crawler.js:217
+                        })
+                        ^
+SyntaxError: Unexpected token }
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 7:54:47:356
+	uncaughtException: Cannot read property 'wait' of undefinedTypeError: Cannot read property 'wait' of undefined
+    at E:\XAMPP\htdocs\autoLogin\lib\crawler.js:215:30
+    at EventLoop.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at EventLoop.g (events.js:291:16)
+    at emitNone (events.js:91:20)
+    at EventLoop.emit (events.js:185:7)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:688:71)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+------------------------------
+ERROR || 7/10/2017 7:55:11:979
+	uncaughtException: Cannot read property 'wait' of undefinedTypeError: Cannot read property 'wait' of undefined
+    at E:\XAMPP\htdocs\autoLogin\lib\crawler.js:217:30
+    at EventLoop.done (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:589:11)
+    at EventLoop.g (events.js:291:16)
+    at emitNone (events.js:91:20)
+    at EventLoop.emit (events.js:185:7)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\zombie\lib\eventloop.js:688:71)
+    at runCallback (timers.js:649:20)
+    at tryOnImmediate (timers.js:622:5)
+    at processImmediate [as _immediateCallback] (timers.js:594:5)
+------------------------------
+ERROR || 7/10/2017 7:57:22:289
+	uncaughtException: Unexpected token }E:\XAMPP\htdocs\autoLogin\lib\crawler.js:218
+                    })
+                    ^
+SyntaxError: Unexpected token }
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:2:17)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 8:5:8:166
+	uncaughtException: Unexpected token =E:\XAMPP\htdocs\autoLogin\lib\processHTML.js:68
+            lesson. = absencesTable[i].querySelectorAll('td')[1].innerHTML;
+                    ^
+SyntaxError: Unexpected token =
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:3:21)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+------------------------------
+ERROR || 7/10/2017 8:10:25:117
+	uncaughtException: Unexpected token (E:\XAMPP\htdocs\autoLogin\lib\routes.js:150
+        ,then(crawler.getAbsencesAsHTML);
+             ^
+SyntaxError: Unexpected token (
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------
+ERROR || 7/10/2017 8:10:36:223
+	uncaughtException: Unexpected token .E:\XAMPP\htdocs\autoLogin\lib\routes.js:151
+        .then(function (data) {
+        ^
+SyntaxError: Unexpected token .
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------

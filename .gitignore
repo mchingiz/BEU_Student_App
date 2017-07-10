@@ -4,5 +4,5 @@ trash/
 db/*
 .env
 npm-debug.log
-exampleData.json
+exampleData/
 todo.txt
