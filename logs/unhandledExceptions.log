@@ -846,3 +846,463 @@ SyntaxError: Unexpected token .
     at Module.runMain (module.js:604:10)
     at run (bootstrap_node.js:394:7)
 ------------------------------
+ERROR || 7/18/2017 19:45:43:785
+	uncaughtException: logs is not definedReferenceError: logs is not defined
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:21:18
+    at handleCallback (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\utils.js:120:56)
+    at Collection.find (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\collection.js:385:44)
+    at NativeCollection.(anonymous function) [as find] (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:126:28)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:20:31
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:317:13)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at Immediate.next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:635:15)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:622:5)
+------------------------------
+ERROR || 7/18/2017 19:46:48:357
+	uncaughtException: Converting circular structure to JSONTypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\response.js:1075:12)
+    at ServerResponse.json (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\response.js:249:14)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:23:13
+    at handleCallback (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\utils.js:120:56)
+    at Collection.find (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\collection.js:385:44)
+    at NativeCollection.(anonymous function) [as find] (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:126:28)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:22:31
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:317:13)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at Immediate.next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+------------------------------
+ERROR || 7/18/2017 19:47:21:350
+	uncaughtException: Converting circular structure to JSONTypeError: Converting circular structure to JSON
+    at Object.stringify (native)
+    at stringify (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\response.js:1075:12)
+    at ServerResponse.json (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\response.js:249:14)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:23:13
+    at handleCallback (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\utils.js:120:56)
+    at Collection.find (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\collection.js:385:44)
+    at NativeCollection.(anonymous function) [as find] (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:126:28)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:22:31
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:317:13)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at Immediate.next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+------------------------------
+ERROR || 7/18/2017 20:20:35:620
+	uncaughtException: console.logs is not a functionTypeError: console.logs is not a function
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:23:17
+    at handleCallback (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\utils.js:120:56)
+    at Collection.find (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\collection.js:385:44)
+    at NativeCollection.(anonymous function) [as find] (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:126:28)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:22:10
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:317:13)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at Immediate.next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:635:15)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:622:5)
+------------------------------
+ERROR || 7/18/2017 20:21:20:609
+	uncaughtException: console.logs is not a functionTypeError: console.logs is not a function
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:24:17
+    at handleCallback (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\utils.js:120:56)
+    at Collection.find (E:\XAMPP\htdocs\autoLogin\node_modules\mongodb\lib\collection.js:385:44)
+    at NativeCollection.(anonymous function) [as find] (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:126:28)
+    at E:\XAMPP\htdocs\autoLogin\lib\routes.js:22:10
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:317:13)
+    at E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:335:12)
+    at Immediate.next (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (E:\XAMPP\htdocs\autoLogin\node_modules\express\lib\router\index.js:635:15)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:622:5)
+------------------------------
+ERROR || 7/18/2017 20:32:6:492
+	uncaughtException: Missing initializer in const declarationE:\XAMPP\htdocs\autoLogin\lib\routes.js:4
+const log
+      ^^^
+SyntaxError: Missing initializer in const declaration
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------
+ERROR || 7/18/2017 20:32:21:68
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:32:49:608
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:34:18:865
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:35:47:47
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:37:24:914
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:37:56:53
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:37:59:952
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:38:8:939
+	uncaughtException: Unexpected token }E:\XAMPP\htdocs\autoLogin\lib\routes.js:35
+    })
+    ^
+SyntaxError: Unexpected token }
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------
+ERROR || 7/18/2017 20:38:20:461
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:38:32:335
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:38:35:446
+	uncaughtException: Unexpected token }E:\XAMPP\htdocs\autoLogin\lib\routes.js:45
+});
+^
+SyntaxError: Unexpected token }
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------
+ERROR || 7/18/2017 20:38:39:268
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:38:45:12
+	uncaughtException: Unexpected token )E:\XAMPP\htdocs\autoLogin\lib\routes.js:44
+    Log.find({},function(err))
+                             ^
+SyntaxError: Unexpected token )
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------
+ERROR || 7/18/2017 20:38:54:537
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:39:2:233
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------
+ERROR || 7/18/2017 20:39:5:438
+	uncaughtException: Cannot find module './db/Models/log.js'Error: Cannot find module './db/Models/log.js'
+    at Function.Module._resolveFilename (module.js:469:15)
+    at Function.Module._load (module.js:417:25)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+------------------------------

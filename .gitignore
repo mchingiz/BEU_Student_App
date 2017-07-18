@@ -1,7 +1,7 @@
 node_modules/
 androidDesign/
 trash/
-db/*
+data/
 .env
 npm-debug.log
 exampleData/
