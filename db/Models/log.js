@@ -1,21 +1,31 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+var schemaOptions = {
+    timestamps: {
+        createdAt: 'created_at'
+    },
+    versionKey: false
+};
+
 var log = new Schema({
+    reqParams: {
+        type: Schema.Types.Mixed,
+        // required: true
+    },
     req: {
         type: Schema.Types.Mixed,
-        required: true
+        // required: true
+    },
+    statusCode: {
+        type: Number
     },
     res: {
         type: Schema.Types.Mixed,
-        required: true
-    },
-    created_at: Date
-});
+        // required: true
+    }
+},schemaOptions);
 
-// the schema is useless so far
-// we need to create a model using it
 var Log = mongoose.model('Log', log);
 
-// make this available to our users in our Node applications
 module.exports = Log;

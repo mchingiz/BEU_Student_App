@@ -1306,3 +1306,268 @@ ERROR || 7/18/2017 20:39:5:438
     at Object.Module._extensions..js (module.js:579:10)
     at Module.load (module.js:487:32)
 ------------------------------
+ERROR || 7/18/2017 20:48:29:225
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:49:17:973
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:49:24:197
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:49:55:427
+	uncaughtException: Unexpected identifierE:\XAMPP\htdocs\autoLogin\lib\routes.js:15
+        res: {
+        ^^^
+SyntaxError: Unexpected identifier
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:542:28)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:394:7)
+------------------------------
+ERROR || 7/18/2017 20:49:57:978
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:50:45:750
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:50:52:14
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:7:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:50:56:852
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:7:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:50:58:824
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:7:16)
+    at Module._compile (module.js:570:32)
+------------------------------
+ERROR || 7/18/2017 20:51:3:489
+	uncaughtException: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.TypeError: Undefined type `undefined` at `timestamps`
+  Did you try nesting Schemas? You can only nest using refs or arrays.
+    at Function.Schema.interpretAsType (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:644:11)
+    at Schema.path (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:519:29)
+    at Schema.add (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:400:12)
+    at new Schema (E:\XAMPP\htdocs\autoLogin\node_modules\mongoose\lib\schema.js:102:10)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\db\Models\log.js:4:11)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\lib\routes.js:4:13)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (E:\XAMPP\htdocs\autoLogin\server.js:8:16)
+    at Module._compile (module.js:570:32)
+------------------------------
