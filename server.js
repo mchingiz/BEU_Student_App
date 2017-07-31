@@ -6,6 +6,7 @@ const Browser = require('zombie');
 const app = express();
 const logger = require('./lib/logger.js'); // logger
 const routes = require('./lib/routes.js');
+const middlewares = require('./lib/middlewares.js');
 
 // --------- PACKAGE SETTINGS ---------
 
@@ -17,6 +18,8 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
+
+app.use('/',middlewares);
 
 // --------- FUNCTIONALITY ---------
 app.use('/',routes);
