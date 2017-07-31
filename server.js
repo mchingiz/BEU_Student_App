@@ -17,9 +17,10 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
-app.use('/',routes);
 
 // --------- FUNCTIONALITY ---------
+app.use('/',routes);
+
 app.listen(app.get('port'),function(){
     console.log('listening on port '+app.get('port'));
     // console.log(this.listenerCount());

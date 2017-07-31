@@ -3,6 +3,7 @@ androidDesign/
 trash/
 db/*
 .idea/
+.idea/workspace.xml
 .env
 npm-debug.log
 exampleData/
