@@ -1,12 +1,12 @@
 require('dotenv').config();
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const Browser = require('zombie');
 const app = express();
-const logger = require('./lib/logger.js'); // logger
 const routes = require('./lib/routes.js');
 const middlewares = require('./lib/middlewares.js');
+const dbMiddleware = require('./db/config.js');
+// const logAndResponse = require('./lib/logAndRespond.js');
 
 // --------- PACKAGE SETTINGS ---------
 
@@ -20,11 +20,15 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.use('/',middlewares);
+app.use(dbMiddleware);
+
+app.use('/',routes);
+
+// app.use('/api/',logAndResponse);
 
 // --------- FUNCTIONALITY ---------
 app.use('/',routes);
 
 app.listen(app.get('port'),function(){
     console.log('listening on port '+app.get('port'));
-    // console.log(this.listenerCount());
 });

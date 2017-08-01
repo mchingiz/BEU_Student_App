@@ -4,6 +4,7 @@ trash/
 db/*
 .idea/
 .idea/workspace.xml
+data/
 .env
 npm-debug.log
 exampleData/
