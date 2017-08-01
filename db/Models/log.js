@@ -2,27 +2,35 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var schemaOptions = {
-    timestamps: {
-        createdAt: 'created_at'
-    },
+    // timestamps: {
+    //     createdAt: 'created_at',
+    //     updatedAt: false
+    // },
     versionKey: false
 };
 
 var log = new Schema({
-    reqParams: {
-        type: Schema.Types.Mixed,
-        // required: true
-    },
     req: {
-        type: Schema.Types.Mixed,
-        // required: true
-    },
-    statusCode: {
-        type: Number
+        body: {
+            type: Schema.Types.Mixed,
+            required: true
+        },
+        ip: {
+            type: String
+        }
     },
     res: {
-        type: Schema.Types.Mixed,
-        // required: true
+        statusCode: {
+            type: Number,
+            required: true
+        },
+        data: {
+            type: Schema.Types.Mixed
+        }
+    },
+    created: {
+        type: Date,
+        default: Date.now
     }
 },schemaOptions);
 
