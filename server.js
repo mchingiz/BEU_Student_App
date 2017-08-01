@@ -6,7 +6,6 @@ const app = express();
 const routes = require('./lib/routes.js');
 const middlewares = require('./lib/middlewares.js');
 const dbMiddleware = require('./db/config.js');
-// const logAndResponse = require('./lib/logAndRespond.js');
 
 // --------- PACKAGE SETTINGS ---------
 
@@ -20,11 +19,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.use('/',middlewares);
-app.use(dbMiddleware);
-
-app.use('/',routes);
-
-// app.use('/api/',logAndResponse);
+// app.use(dbMiddleware);
 
 // --------- FUNCTIONALITY ---------
 app.use('/',routes);

@@ -18,8 +18,8 @@ const requestCallback = function(err,res,body){
     }else if(serverIsUp == true){ // Should notify
         console.log('notify');
 
-        var htmlPage = util.format("Server was down at <b>%s</b>.", utilities.timestamp());
-        htmlPage += util.format("<a href='http://%s:3000/ping'>Check again</a>.", ipAddress);
+        var htmlPage = util.format("Server was down at <b>%.example-env</b>.", utilities.timestamp());
+        htmlPage += util.format("<a href='http://%.example-env:3000/ping'>Check again</a>.", ipAddress);
         htmlPage += "\n Here is last "+errLines+" lines of error logs.";
 
         terminal.exec('pm2 logs --err --nostream --lines '+errLines+' server')
