@@ -5,7 +5,14 @@ const Browser = require('zombie');
 const app = express();
 const routes = require('./lib/routes.js');
 const middlewares = require('./lib/middlewares.js');
-const dbMiddleware = require('./db/config.js');
+// const dbMiddleware = require('./db/config.js');
+
+require('mongoose').connect('mongodb://localhost:27017/beu',{
+	user: process.env.MONGO_USERNAME,
+	pass: process.env.MONGO_PASSWORD
+}).then(function(){
+	console.log('dbConnected');
+});;
 
 // --------- PACKAGE SETTINGS ---------
 
