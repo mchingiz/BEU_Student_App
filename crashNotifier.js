@@ -2,9 +2,7 @@ require('dotenv').config();
 
 const request = require('request');
 const xoauth2 = require('xoauth2');
-const ipAddress = require('./lib/ip').get();
-
-console.log(ipAddress);
+const ipAddress = process.env.IP;
 const utilities = require('./lib/utilities');
 const terminal = require('./lib/terminal');
 var mailer = require('./lib/mailer');
