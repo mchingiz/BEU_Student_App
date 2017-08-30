@@ -12,7 +12,7 @@ require('mongoose').connect('mongodb://localhost:27017/beu',{
 	pass: process.env.MONGO_PASSWORD
 }).then(function(){
 	console.log('dbConnected');
-});;
+});
 
 // --------- PACKAGE SETTINGS ---------
 
@@ -26,7 +26,6 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.use('/',middlewares);
-// app.use(dbMiddleware);
 
 // --------- FUNCTIONALITY ---------
 app.use('/',routes);
