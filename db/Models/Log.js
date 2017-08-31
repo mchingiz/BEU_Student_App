@@ -19,6 +19,9 @@ var log = new Schema({
             type: String
         }
     },
+    html: {
+        type: Schema.Types.Mixed
+    },
     res: {
         statusCode: {
             type: Number,
