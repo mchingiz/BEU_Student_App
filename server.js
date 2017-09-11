@@ -3,16 +3,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const Browser = require('zombie');
 const app = express();
-const routes = require('./lib/routes2.js');
+const routes = require('./lib/routes.js');
 const middlewares = require('./lib/middlewares.js');
 // const dbMiddleware = require('./db/config.js');
 
-// require('mongoose').connect('mongodb://localhost:27017/beu',{
-// 	user: process.env.MONGO_USERNAME,
-// 	pass: process.env.MONGO_PASSWORD
-// }).then(function(){
-// 	console.log('dbConnected');
-// });
+require('mongoose').connect('mongodb://localhost:27017/beu',{
+	user: process.env.MONGO_USERNAME,
+	pass: process.env.MONGO_PASSWORD
+}).then(function(){
+	console.log('dbConnected');
+});
 
 // --------- PACKAGE SETTINGS ---------
 
@@ -31,8 +31,8 @@ app.use('/',middlewares);
 app.use('/',routes);
 
 app.use(function (err, req, res, next) {
-    console.error(err.stack)
-    res.status(500).send('Something broke!');
+    console.error(err.stack);
+    res.status(500).send('Something broke! We are working on it.');
 })
 
 
