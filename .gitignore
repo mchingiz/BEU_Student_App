@@ -1,8 +1,8 @@
 /node_modules
 /androidDesign
 /trash
-/.idea
-/.idea/workspace.xml
+.idea
+.idea/workspace.xml
 /data
 .env
 npm-debug.log
