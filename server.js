@@ -30,11 +30,6 @@ app.use('/',middlewares);
 // --------- FUNCTIONALITY ---------
 app.use('/',routes);
 
-app.use(function (err, req, res, next) {
-    console.error(err.stack);
-    res.status(500).send('Something broke! We are working on it.');
-})
-
 
 
 app.listen(app.get('port'),function(){

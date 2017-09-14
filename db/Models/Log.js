@@ -31,6 +31,9 @@ var log = new Schema({
             type: Schema.Types.Mixed
         }
     },
+    errorStack: {
+        type: Schema.Types.Mixed
+    },
     created: {
         type: Date,
         default: Date.now
