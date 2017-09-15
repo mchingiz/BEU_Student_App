@@ -14,9 +14,8 @@ var errLines = 60;
 const requestCallback = function(err,res,body){
     if(!err && res.statusCode == 200){ // Works well
         serverIsUp = true;
-        console.log('up');
     }else if(serverIsUp == true){ // Should notify
-        console.log('notify');
+        console.log('NOTIFY');
 
         var htmlPage = util.format("Server was down at <b>%s</b>.", utilities.timestamp());
         htmlPage += util.format("<a href='http://%s:3000/ping'>Check again</a>.", ipAddress);
@@ -42,7 +41,7 @@ const requestCallback = function(err,res,body){
 
 
     }else{ // Notified already
-        console.log('notified already')
+        // console.log('notified already')
     }
 }
 
