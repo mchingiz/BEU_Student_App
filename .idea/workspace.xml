@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ac7c0edd-ffd4-47e8-b1f0-81aaefdca27b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/scraper.js" afterPath="$PROJECT_DIR$/lib/scraper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="scraper.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scraper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/scraper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-131">
+            <state relative-caret-position="3739">
               <caret line="156" column="56" lean-forward="false" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="56" />
               <folding />
             </state>
@@ -80,31 +82,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1617">
-              <caret line="173" column="19" lean-forward="false" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="logAndRespond.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/logAndRespond.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="193">
-              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <marker date="1505500717555" expanded="true" signature="0:433" ph="{&quot;name&quot;: &quot;beu-calculator&quot;...}" />
+                <marker date="1505500717555" expanded="true" signature="228:431" ph="{&quot;body-parser&quot;: &quot;1.17.2&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crashNotifier.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crashNotifier.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,7 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pressBut</find>
       <find>pressButt</find>
       <find>pressButton</find>
       <find>s</find>
@@ -151,10 +165,13 @@
       <find>consol</find>
       <find>con</find>
       <find>console</find>
+      <find>public-ip</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\BEU_Grade_Calculator</dir>
       <dir>C:\xampp\htdocs\BEU_Grade_Calculator\node_modules\zombie</dir>
+      <dir>G:\Projects\autoLogin</dir>
+      <dir>G:\Projects\autoLogin\lib</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -201,10 +218,10 @@
         <option value="$PROJECT_DIR$/lib/logAndRespond.js" />
         <option value="$PROJECT_DIR$/lib/routes.js" />
         <option value="$PROJECT_DIR$/lib/processHTML.js" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/crashNotifier.js" />
         <option value="$PROJECT_DIR$/lib/utilities.js" />
         <option value="$PROJECT_DIR$/lib/scraper.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -482,12 +499,12 @@
       <workItem from="1504850386783" duration="27031000" />
       <workItem from="1505196919776" duration="1677000" />
       <workItem from="1505386526194" duration="3932000" />
-      <workItem from="1505498686303" duration="1745000" />
+      <workItem from="1505498686303" duration="2733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179113000" />
+    <option name="totallyTimeSpent" value="180101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="41" width="1938" height="1048" extended-state="6" />
@@ -652,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tester.js" />
     <entry file="file://$PROJECT_DIR$/apiTesting.js" />
     <entry file="file://$PROJECT_DIR$/db/Models/Log.js">
@@ -702,26 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crashNotifier.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/logAndRespond.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
-          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -752,8 +745,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/scraper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-131">
+        <state relative-caret-position="3739">
           <caret line="156" column="56" lean-forward="false" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <marker date="1505500717555" expanded="true" signature="0:433" ph="{&quot;name&quot;: &quot;beu-calculator&quot;...}" />
+            <marker date="1505500717555" expanded="true" signature="228:431" ph="{&quot;body-parser&quot;: &quot;1.17.2&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crashNotifier.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
