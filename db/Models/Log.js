@@ -17,6 +17,9 @@ var log = new Schema({
         },
         ip: {
             type: String
+        },
+        originalUrl: {
+            type: String
         }
     },
     html: {
@@ -29,6 +32,9 @@ var log = new Schema({
         },
         data: {
             type: Schema.Types.Mixed
+        },
+        time: {
+            type: Number
         }
     },
     errorStack: {
