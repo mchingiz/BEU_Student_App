@@ -4,7 +4,7 @@ Back-end system of an android app for BEU Students. No need to use browser. Log 
 
 **Note:** *Sensitive information like passwords and real names are not stored on server.*
 
-<a href="https://play.google.com">
+<a href="https://play.google.com/store/apps/details?id=com.gmail.elmir368.beustudent">
   <img src="https://github.com/mchingiz/BEU_Grade_Calculator/raw/master/media/google-play-badge.png" width="200px">
 </a>
 
