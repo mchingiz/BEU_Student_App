@@ -4,14 +4,31 @@ const bodyParser = require('body-parser');
 const app = express();
 const routes = require('./lib/routes.js');
 const middlewares = require('./lib/middlewares.js');
+console.log("restarted");
 
 // --------- PACKAGE SETTINGS ---------
-require('mongoose').connect('mongodb://localhost:27017/beu',{
-    user: process.env.MONGO_USERNAME,
-    pass: process.env.MONGO_PASSWORD
-}).then(function(){
-    console.log('dbConnected');
-});
+var dbUsername = process.env.MONGO_USERNAME;
+var dbPassword = process.env.MONGO_PASSWORD;
+
+var connectionUrl = "mongodb://"+dbUsername+":"+dbPassword+"@localhost:27017/beu?authSource=admin";
+require('mongoose')
+    .connect(connectionUrl)
+    .then(function(){
+        console.log('dbConnected');
+    }).catch(function(err){
+        console.log('dbConnectionError');
+        console.log(err)
+    });
+
+// require('mongoose').connect('mongodb://45.77.52.198:27017/beu',{
+//     user: process.env.MONGO_USERNAME,
+//     pass: process.env.MONGO_PASSWORD
+// }).then(function(){
+//     console.log('dbConnected');
+// }).catch(function(err){
+//     console.log('dbConnectionError');
+//     console.log(err)
+// });
 
 app.use(express.static('public'));
 app.set('port', 3000);
