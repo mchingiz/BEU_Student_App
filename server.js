@@ -20,16 +20,6 @@ require('mongoose')
         console.log(err)
     });
 
-// require('mongoose').connect('mongodb://45.77.52.198:27017/beu',{
-//     user: process.env.MONGO_USERNAME,
-//     pass: process.env.MONGO_PASSWORD
-// }).then(function(){
-//     console.log('dbConnected');
-// }).catch(function(err){
-//     console.log('dbConnectionError');
-//     console.log(err)
-// });
-
 app.use(express.static('public'));
 app.set('port', 3000);
 
