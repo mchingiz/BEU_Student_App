@@ -9,7 +9,7 @@ console.log("restarted");
 // --------- PACKAGE SETTINGS ---------
 var dbUsername = process.env.MONGO_USERNAME;
 var dbPassword = process.env.MONGO_PASSWORD;
-
+/*
 if(process.env.ENVIRONMENT == "pro"){
     var connectionUrl = "mongodb://"+dbUsername+":"+dbPassword+"@localhost:27017/beu?authSource=admin";
     require('mongoose')
@@ -21,7 +21,7 @@ if(process.env.ENVIRONMENT == "pro"){
             console.log(err)
         });
 }
-
+*/
 app.use(express.static('public'));
 app.set('port', 3000);
 
