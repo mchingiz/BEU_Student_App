@@ -8,3 +8,12 @@ patch:
         patched: '2018-06-26T04:46:23.169Z'
     - npm-check-updates > npmi > npm > request > tunnel-agent:
         patched: '2018-06-26T04:46:23.169Z'
+  'npm:hoek:20180212':
+    - pm2 > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2018-10-14T05:06:52.903Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-10-14T05:06:52.903Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-10-14T05:06:52.903Z'
+    - pm2 > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-10-14T05:06:52.903Z'
