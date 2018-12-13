@@ -17,7 +17,7 @@
     "express": "4.16.0",
     "htmlparser2": "^3.9.2",
     "lodash": "^4.17.4",
-    "mongoose": "4.11.3",
+    "mongoose": "4.13.17",
     "nodemailer": "4.0.1",
     "npm-check-updates": "^2.14.0",
     "pm2": "^2.6.1",
