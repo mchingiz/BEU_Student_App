@@ -8,6 +8,8 @@ module.exports = {
         fs.appendFile(dbFilePath+dbName+".txt",id+",",function(err){
             if(!err){
                 console.log("append olundu");
+            }else{
+                console.error("Fayla yazmadi: "+err);
             }
         })
     },
@@ -22,6 +24,8 @@ module.exports = {
                 if(idArray.indexOf(id) < 0){
                     thisModule.append(dbName,id);
                 }
+            }else{
+                console.error("Fayla yazmadi: "+err);
             }
         });
     },
