@@ -1,6 +1,8 @@
 const fs = require('fs');
 const dbFilePath = "./db/";
 
+// all file dbs -> "requests"
+
 module.exports = {
     append: function(dbName,id){
         fs.appendFile(dbFilePath+dbName+".txt",id+",",function(err){
