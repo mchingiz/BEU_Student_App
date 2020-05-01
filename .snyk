@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -17,3 +17,58 @@ patch:
         patched: '2018-10-14T05:06:52.903Z'
     - pm2 > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
         patched: '2018-10-14T05:06:52.903Z'
+  SNYK-JS-LODASH-567746:
+    - cheerio > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - mongoose > async > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > node-alias > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > snyk-php-plugin > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - pm2 > async > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > @snyk/dep-graph > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > inquirer > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > snyk-config > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > snyk-nuget-plugin > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > snyk-php-plugin > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - pm2 > pm2-deploy > async > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
+    - npm-check-updates > snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-05-01T07:08:21.919Z'
